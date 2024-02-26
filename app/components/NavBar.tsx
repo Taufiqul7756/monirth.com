@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NAV_LINKS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,15 +8,34 @@ import React from "react";
 
 const NavBar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [hasShadow, setHasShadow] = useState(false);
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      if (scrollPosition > 0) {
+        setHasShadow(true);
+      } else {
+        setHasShadow(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <nav
-      className="padding-container relative z-30 rounded-lg
-     bg-white shadow-xl ring-1 ring-slate-100 py-5"
+      className={`fixed top-0 left-0 right-0 padding-container z-30 rounded-lg bg-white  py-5 lg:py-3 transition-shadow duration-300 ${
+        hasShadow ? "shadow-xl" : ""
+      }`}
     >
       <div className="flexBetween max-container">
         <Link href="/" className="bold-28 capitalize  relative">
