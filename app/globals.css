@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -13,27 +13,30 @@
 body {
   font-family: Inter;
 }
-.linearGradient{
+.linearGradient {
   background: linear-gradient(97deg, #4066ff 4%, #2949c6 100%);
 }
 
 @layer utilities {
-  .btn_white_rounded  { 
-    @apply  border-white bg-white px-6 py-3 text-gray-90
+  .btn_white_rounded {
+    @apply border-white bg-white px-6 py-3 text-gray-90;
   }
-  .btn_blue_rounded { 
-    @apply  border-blue-500 bg-blue-500 px-6 py-3 text-white
+  .btn_blue_rounded {
+    @apply border-blue-500 bg-blue-500 px-6 py-3 text-white;
   }
-  .btn_blue { 
-    @apply  rounded-2xl bg-blue-500 px-6 py-3 text-white
+  .btn_blue {
+    @apply rounded-2xl bg-blue-500 px-6 py-3 text-white;
   }
-  .btn_dark_rounded { 
-    @apply  border-green-90 bg-green-90 px-6 py-3 text-white transition-all hover:bg-black
+  .btn_dark_rounded {
+    @apply border-green-90 bg-green-90 px-6 py-3 text-white transition-all hover:bg-black;
   }
-  .btn_dark { 
-    @apply  rounded-2xl bg-green-90 px-6 py-3 text-white transition-all hover:bg-black
+  .btn_orange_rounded {
+    @apply bg-white px-6 py-3 text-black transition-all hover:bg-[#f65d3e];
   }
-  
+  .btn_dark {
+    @apply rounded-2xl bg-green-90 px-6 py-3 text-white transition-all hover:bg-black;
+  }
+
   .max-container {
     @apply mx-auto max-w-[1440px];
   }
@@ -139,5 +142,4 @@ body {
   .bold-16 {
     @apply text-[16px] font-[700];
   }
-
 }
