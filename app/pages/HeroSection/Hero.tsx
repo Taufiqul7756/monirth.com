@@ -21,12 +21,12 @@ const Hero = () => {
   gap-20 py-10 pb-32 md:gap-28 lg:py-20 lg:flex-row"
     >
       <span
-        className="max-container absolute top-64 left-44 h-[144px] w-[777px] bg-blue-400
+        className="max-container absolute top-64 left-44 h-[144px] w-[150px] md:w-[300px] lg:w-[777px] bg-blue-400
       rounded-full shadow-lg blur-[7rem] -z-10"
       ></span>
-      {/* <div className="flex gap-10"> */}
+
       {/* LEFT */}
-      <div className="relative z-20 flex flex-l flex-col pt-16">
+      <div className="relative z-20 flex flex-l flex-col pt-16 mr-12 ">
         <h3 className="bold-20">Hi, </h3>
         <h1 className="bold-48 lg:bold-64 relative">I'm Monir. </h1>
         <h2 className="bold-28 lg:bold-32 text-[1.8 rem] capitalize">
@@ -60,7 +60,6 @@ const Hero = () => {
           <Button
             type="button"
             title="Connect"
-            // icon="/download.svg"
             icon="/connect.svg"
             variant="btn_orange_rounded"
           />
@@ -68,17 +67,57 @@ const Hero = () => {
       </div>
 
       {/* Right */}
-      <div className="flex flex-l xl:flexEnd">
-        <Image
-          src="/bg.png"
-          alt="bg"
-          width={488}
-          height={488}
-          className="w-auto"
-        />
-      </div>
+      <div className="w-full lg:w-1/2 mt-10">
+        <h1 className="bold-32 mb-5 flex justify-center">RECENT VIDEOS</h1>
+        <div className="grid grid-cols-2 gap-4">
+          {/* First Video */}
+          <div className="relative" style={{ paddingBottom: "56.25%" }}>
+            <iframe
+              className="absolute top-0 left-0 w-full h-full"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/AAatVHrLr9Y?si=zqy6ibbzRoXFgJHC"
+              title="YouTube Video 1"
+              allowFullScreen
+            ></iframe>
+          </div>
 
-      {/* </div> */}
+          {/* Second Video */}
+          <div className="relative" style={{ paddingBottom: "56.25%" }}>
+            <iframe
+              className="absolute top-0 left-0 w-full h-full"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/0BKXnmHEFpA?si=0kyUwKyn5xM8DaM4"
+              title="YouTube Video 2"
+              allowFullScreen
+            ></iframe>
+          </div>
+          {/* Third Video */}
+          <div className="relative" style={{ paddingBottom: "56.25%" }}>
+            <iframe
+              className="absolute top-0 left-0 w-full h-full"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/9ih5wkfeYBg?si=q3dvTPIBIfO65_4g"
+              title="YouTube Video 1"
+              allowFullScreen
+            ></iframe>
+          </div>
+
+          {/* Forth Video */}
+          <div className="relative" style={{ paddingBottom: "56.25%" }}>
+            <iframe
+              className="absolute top-0 left-0 w-full h-full"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/EVF-ygnF1zA?si=EtOdip4TEA4Cs02g"
+              title="YouTube Video 2"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
