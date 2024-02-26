@@ -52,8 +52,9 @@ const Hero = () => {
         </h2>
 
         <p className="regular-16 max-w-[555px] my-4">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis,
-          dolorum.
+          I’ve been making videos since 2019. I use Adobe Premiere Pro for video
+          editing, Adobe After Effects for motion graphics & adobe Photoshop for
+          thumbnail design.
         </p>
 
         <div className="flexStart gap-1 pt-6">

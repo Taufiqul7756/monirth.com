@@ -42,10 +42,6 @@ const NavBar = () => {
           <Image src="/logo.png" alt="menu" width={250} height={250} />
         </Link>
 
-        {/* <div>
-          <Image src="/logo.png" alt="menu" width={250} height={250} />
-        </div> */}
-
         <ul
           className={`h-full gap-6 lg:flex px-6 py-3 ${
             isNavOpen ? "" : "hidden"
@@ -57,7 +53,7 @@ const NavBar = () => {
               <Link
                 href={link.href}
                 className="flexCenter text-[15px] font-[500] text-black
-              hover:bg-blue-500 hover:text-white px-4 py-1 rounded-full
+              hover:bg-[#f65d3e] hover:text-white px-4 py-1 rounded-full
               cursor-pointer transition-all duration-300"
               >
                 {link.label}
