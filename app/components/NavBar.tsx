@@ -39,9 +39,12 @@ const NavBar = () => {
     >
       <div className="flexBetween max-container">
         <Link href="/" className="bold-28 capitalize  relative">
-          {" "}
-          TG <span className="text-blue-500">Hodgepodge</span>
+          <Image src="/logo.png" alt="menu" width={250} height={250} />
         </Link>
+
+        {/* <div>
+          <Image src="/logo.png" alt="menu" width={250} height={250} />
+        </div> */}
 
         <ul
           className={`h-full gap-6 lg:flex px-6 py-3 ${
