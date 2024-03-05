@@ -6,7 +6,9 @@ export default function Home() {
     <main>
       <>
         <HeroPage />
-        <ProductsPage />
+        <div className="p-10 bg-slate-500">
+          <ProductsPage />
+        </div>
       </>
     </main>
   );

@@ -1,7 +1,14 @@
+"use client";
+
 import React from "react";
+import ProductCard from "./ProductCard";
 
 const ProductsPage = () => {
-  return <div>Products</div>;
+  return (
+    <div>
+      <ProductCard />
+    </div>
+  );
 };
 
 export default ProductsPage;
