@@ -57,7 +57,7 @@ const Footer = () => {
         </ul>
       </nav>
       <aside className="text-center text-sm">
-        <p>&copy; 2024 Monit TGHP. All Rights Reserved.</p>
+        <p>&copy; 2024 Monir TGHP. All Rights Reserved.</p>
       </aside>
     </footer>
   );

@@ -2,6 +2,7 @@
 
 import Button from "@/app/components/Button";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 
@@ -28,8 +29,8 @@ const Hero = () => {
       {/* LEFT */}
       <div className="relative z-20 flex flex-l flex-col pt-16 mr-12 ">
         <h3 className="bold-20">Hi, </h3>
-        <h1 className="bold-48 lg:bold-64 relative">I'm Monir. </h1>
-        <h2 className="bold-28 lg:bold-32 text-[1.8 rem] capitalize">
+        <h1 className="bold-16 lg:bold-28 relative">I'm Monir. </h1>
+        <h2 className="bold-28 md:bold-32 lg:bold-40 text-[1.8 rem] capitalize">
           A {""}
           <span className="text-[#f65d3e]">
             <Typewriter
@@ -53,12 +54,14 @@ const Hero = () => {
         </p>
 
         <div className="flexStart gap-1 pt-6">
-          <Button
-            type="button"
-            title="Connect"
-            icon="/connect.svg"
-            variant="btn_orange_rounded"
-          />
+          <Link href="https://www.youtube.com/@TechHodgepodge" target="_blank">
+            <Button
+              type="button"
+              title="Connect"
+              icon="/connect.svg"
+              variant="btn_orange_rounded"
+            />
+          </Link>
         </div>
       </div>
 
